@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<web-app xmlns="http://java.sun.com/xml/ns/javaee" version="2.5">
+
+
+    <servlet>
+        <servlet-name>GetProduits</servlet-name>
+        <servlet-class>sd.shopGUY.Service.GetProduitServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>GetProduits</servlet-name>
+        <url-pattern>/getproduits</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>GetPromos</servlet-name>
+        <servlet-class>sd.shopGUY.Service.GetPromoServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>GetPromos</servlet-name>
+        <url-pattern>/getpromos</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>UpdateProduit</servlet-name>
+        <servlet-class>sd.shopGUY.Service.UpdateProduitServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>UpdateProduit</servlet-name>
+        <url-pattern>/updateprod</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>AddCommand</servlet-name>
+        <servlet-class>sd.shopGUY.Service.AddCommandServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>AddCommand</servlet-name>
+        <url-pattern>/addcommand</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>UpdateCommand</servlet-name>
+        <servlet-class>sd.shopGUY.Service.UpdateCommandServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>UpdateCommand</servlet-name>
+        <url-pattern>/updatecommand</url-pattern>
+    </servlet-mapping>
+    <welcome-file-list>
+        <welcome-file>index.html</welcome-file>
+    </welcome-file-list>
+
+</web-app>

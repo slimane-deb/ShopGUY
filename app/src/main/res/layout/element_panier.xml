@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:id="@+id/coverIconPanier"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/marque"
+        android:layout_toRightOf="@+id/coverIconPanier"
+        android:layout_alignParentTop="true"
+        android:textSize="18dp"
+        android:textColor="#000"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/modele"
+        android:layout_below="@+id/marque"
+        android:layout_toRightOf="@+id/coverIconPanier"
+        android:textSize="18dp"
+        android:textColor="#000"
+
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/quantity"
+        android:layout_below="@+id/modele"
+        android:layout_toRightOf="@+id/coverIconPanier"
+        android:textSize="18dp"
+        android:textColor="#000"
+
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/prix"
+        android:layout_below="@+id/quantity"
+        android:layout_toRightOf="@+id/coverIconPanier"
+        android:textSize="18dp"
+        android:textColor="@color/colorPrimaryDark"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/plusQuant"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_toLeftOf="@+id/minusQuant"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/button_plus"
+        android:layout_centerVertical="true"
+        android:focusable="false"
+        android:focusableInTouchMode="false"/>
+    <Button
+        android:id="@+id/minusQuant"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="10dp"
+
+        android:background="@drawable/button_minus"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        />
+
+
+
+
+
+</RelativeLayout>
